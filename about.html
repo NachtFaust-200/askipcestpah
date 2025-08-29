@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Accueil - askipcestpah.uwu</title>
+  <title>À propos - askipcestpah.uwu</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,6 +12,9 @@
       color: #e2e8f0;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -44,36 +47,37 @@
       padding: 3rem 2rem;
       max-width: 700px;
       margin: auto;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    img.avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 15px #4fd1c5aa;
+      object-fit: cover;
     }
 
     h2 {
       border-left: 4px solid #4fd1c5;
       padding-left: 0.5rem;
       margin-bottom: 1rem;
+      width: 100%;
+      text-align: left;
+      max-width: 700px;
     }
 
-    ul.servers-list {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul.servers-list li {
-      margin-bottom: 1rem;
-    }
-
-    ul.servers-list li a {
-      background-color: #2d3748;
-      color: #81e6d9;
-      padding: 0.6rem 1rem;
-      border-radius: 8px;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-
-    ul.servers-list li a:hover {
-      background-color: #38b2ac;
+    p.bio {
+      font-size: 1.1rem;
+      color: #cbd5e0;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 2rem;
     }
 
     footer {
@@ -81,9 +85,9 @@
       padding: 1rem 0;
       background-color: #2d3748;
       color: #718096;
-      margin-top: 3rem;
       user-select: none;
       font-size: 0.9rem;
+      margin-top: auto;
     }
   </style>
 </head>
@@ -100,13 +104,13 @@
   </header>
 
   <main>
-    <section>
-      <h2>Serveurs associés</h2>
-      <ul class="servers-list">
-        <li><a href="https://discord.gg/8T5pUN8PwA" target="_blank" rel="noopener noreferrer">Serveur de Pote 1</a></li>
-        <li><a href="https://discord.gg/6ZMz9Dkfcg" target="_blank" rel="noopener noreferrer">Serveur de Pote 2</a></li>
-      </ul>
-    </section>
+    <h2>À propos de moi</h2>
+    <img class="avatar" src="https://i.pinimg.com/736x/99/33/05/993305a15cd9a6c82ea2db4864503034.jpg" alt="Avatar de askipcestpah.uwu" />
+    <p class="bio">
+      Salut ! Je suis <strong>askipcestpah.uwu</strong>, un jeune développeur passionné par la création de bots Discord.<br />
+      J’ai commencé récemment à coder, et j’ai pour objectif de créer un bot utile pour aider les communautés à sécuriser leurs serveurs et à faciliter leur gestion.<br />
+      J’apprends chaque jour et j’espère que ce projet pourra profiter à beaucoup de personnes !
+    </p>
   </main>
 
   <footer>© 2025 - Créé par askipcestpah.uwu</footer>

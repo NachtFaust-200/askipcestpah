@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fonctionnalités - askipcestpah.uwu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1a202c;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2d3748;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #4fd1c5;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #a0aec0;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4fd1c5;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      border-left: 4px solid #4fd1c5;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .category {
+      margin-bottom: 2rem;
+    }
+
+    ul.commands-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.commands-list li {
+      background-color: #2d3748;
+      margin-bottom: 0.6rem;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #4fd1c5aa;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+    }
+
+    ul.commands-list li span.cmd-name {
+      color: #81e6d9;
+      font-family: monospace;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #2d3748;
+      color: #718096;
+      margin-top: 3rem;
+      user-select: none;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>askipcestpah.uwu</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="features.html">Fonctionnalités</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Fonctionnalités du bot</h2>
+
+    <section class="category">
+      <h3>Administration</h3>
+      <ul class="commands-list">
+        <li><span class="cmd-name">ban</span> : Bannit un membre</li>
+        <li><span class="cmd-name">clear</span> : Supprime un nombre de messages</li>
+        <li><span class="cmd-name">kick</span> : Expulse un membre</li>
+        <li><span class="cmd-name">lock</span> : Verrouille le salon actuel</li>
+        <li><span class="cmd-name">mediaonly</span> : Active ou désactive le mode media-only dans un salon</li>
+        <li><span class="cmd-name">mute</span> : Mute un membre</li>
+        <li><span class="cmd-name">nuke</span> : Supprime et recrée le salon actuel</li>
+        <li><span class="cmd-name">slowmode</span> : Active un slowmode dans le salon</li>
+        <li><span class="cmd-name">unban</span> : Débannit un membre</li>
+        <li><span class="cmd-name">unlock</span> : Déverrouille le salon actuel</li>
+        <li><span class="cmd-name">unmute</span> : Unmute un membre</li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h3>Information</h3>
+      <ul class="commands-list">
+        <li><span class="cmd-name">botinfo</span> : Affiche toutes les informations du bot</li>
+        <li><span class="cmd-name">ping</span> : Affiche la latence du bot</li>
+        <li><span class="cmd-name">serverinfo</span> : Affiche les informations du serveur</li>
+        <li><span class="cmd-name">userinfo</span> : Affiche les informations d'un utilisateur</li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h3>Configuration</h3>
+      <ul class="commands-list">
+        <li><span class="cmd-name">config</span> : Configuration du bot (prefix, whitelist, anti-raid, PP)</li>
+      </ul>
+    </section>
+
+    <section class="category">
+      <h3>Général</h3>
+      <ul class="commands-list">
+        <li><span class="cmd-name">help</span> : Affiche la liste des commandes</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>© 2025 - Créé par askipcestpah.uwu</footer>
+</body>
+
+</html>
