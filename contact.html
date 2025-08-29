@@ -6,82 +6,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - askipcestpah.uwu</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #1a202c;
-      color: #e2e8f0;
       margin: 0;
-      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: #ff6700;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    a:hover {
+      color: #ffa040;
     }
 
     header {
-      background-color: #2d3748;
+      background-color: #1a1a1a;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 2px solid #ff6700;
+      user-select: none;
     }
 
     header h1 {
       margin: 0;
-      color: #4fd1c5;
       font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      color: #ff6700;
     }
 
     nav a {
-      color: #a0aec0;
-      margin-left: 1.5rem;
-      text-decoration: none;
+      margin-left: 1.8rem;
       font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #4fd1c5;
+      font-size: 1rem;
     }
 
     main {
-      padding: 3rem 2rem;
-      max-width: 700px;
-      margin: auto;
+      flex-grow: 1;
+      max-width: 600px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
       text-align: center;
     }
 
-    h2 {
-      border-left: 4px solid #4fd1c5;
-      padding-left: 0.5rem;
+    main h2 {
+      font-weight: 700;
+      font-size: 2.4rem;
       margin-bottom: 1rem;
-      text-align: left;
+      color: #ff6700;
+      user-select: none;
     }
 
-    .contact-info {
-      background-color: #2d3748;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #4fd1c5aa;
+    main p {
+      font-weight: 400;
       font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+      user-select: none;
     }
 
-    .contact-info a {
-      color: #81e6d9;
-      text-decoration: none;
-      font-weight: 600;
+    .discord-tag {
+      font-weight: 700;
+      font-size: 1.5rem;
+      background-color: #ff6700;
+      color: #121212;
+      padding: 0.7rem 1.5rem;
+      border-radius: 30px;
+      display: inline-block;
+      cursor: pointer;
+      user-select: text;
+      transition: background-color 0.3s ease;
+      user-select: none;
     }
 
-    .contact-info a:hover {
-      text-decoration: underline;
+    .discord-tag:hover {
+      background-color: #ffa040;
     }
 
     footer {
+      background-color: #1a1a1a;
       text-align: center;
       padding: 1rem 0;
-      background-color: #2d3748;
-      color: #718096;
-      margin-top: 3rem;
-      user-select: none;
+      color: #666;
       font-size: 0.9rem;
+      user-select: none;
+      border-top: 2px solid #ff6700;
+      margin-top: auto;
+    }
+
+    @media (max-width: 480px) {
+      main h2 {
+        font-size: 1.8rem;
+      }
+
+      main p {
+        font-size: 1rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
     }
   </style>
+
+  <script>
+    function copyDiscord() {
+      navigator.clipboard.writeText('askipcestpah.uwu#6250')
+        .then(() => alert('Tag Discord copié dans le presse-papiers !'))
+        .catch(() => alert('Impossible de copier le tag Discord'));
+    }
+  </script>
 </head>
 
 <body>
@@ -96,17 +143,17 @@
   </header>
 
   <main>
-    <h2>Contact</h2>
-    <div class="contact-info">
-      Tu peux me contacter directement sur Discord : <br />
-      <strong>askipcestpah.uwu#6250</strong><br /><br />
-      <a href="https://discord.com/users/625042322513592330" target="_blank" rel="noopener noreferrer">
-        Ouvre mon profil Discord dans ton navigateur
-      </a>
+    <h2>Contactez-moi</h2>
+    <p>Pour toute question ou collaboration, ajoutez-moi sur Discord :</p>
+    <div class="discord-tag" onclick="copyDiscord()" title="Cliquez pour copier">
+      askipcestpah.uwu
     </div>
+    <p style="margin-top: 1rem; font-size: 0.9rem; color: #999;">
+      (Cliquez sur le tag pour copier dans votre presse-papiers)
+    </p>
   </main>
 
-  <footer>© 2025 - Créé par askipcestpah.uwu</footer>
+  <footer>© 2025 askipcestpah.uwu — Tous droits réservés</footer>
 </body>
 
 </html>

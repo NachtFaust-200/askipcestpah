@@ -6,85 +6,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fonctionnalités - askipcestpah.uwu</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #1a202c;
-      color: #e2e8f0;
       margin: 0;
-      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: #ff6700;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffa040;
     }
 
     header {
-      background-color: #2d3748;
+      background-color: #1a1a1a;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 2px solid #ff6700;
+      user-select: none;
     }
 
     header h1 {
       margin: 0;
-      color: #4fd1c5;
       font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      color: #ff6700;
     }
 
     nav a {
-      color: #a0aec0;
-      margin-left: 1.5rem;
-      text-decoration: none;
+      margin-left: 1.8rem;
       font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #4fd1c5;
+      font-size: 1rem;
     }
 
     main {
-      padding: 3rem 2rem;
-      max-width: 700px;
-      margin: auto;
+      flex-grow: 1;
+      max-width: 800px;
+      margin: 3rem auto 4rem auto;
+      padding: 0 1.5rem;
     }
 
-    h2 {
-      border-left: 4px solid #4fd1c5;
-      padding-left: 0.5rem;
+    main h2 {
+      font-weight: 700;
+      font-size: 2.4rem;
       margin-bottom: 1rem;
+      color: #ff6700;
+      user-select: none;
     }
 
-    .category {
-      margin-bottom: 2rem;
+    section {
+      margin-bottom: 2.5rem;
     }
 
-    ul.commands-list {
+    h3 {
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-bottom: 0.7rem;
+      color: #ffa040;
+      user-select: none;
+    }
+
+    ul {
       list-style: none;
       padding-left: 0;
+      color: #ddd;
+      line-height: 1.5;
+      user-select: text;
     }
 
-    ul.commands-list li {
-      background-color: #2d3748;
-      margin-bottom: 0.6rem;
-      padding: 0.6rem 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 8px #4fd1c5aa;
-      display: flex;
-      justify-content: space-between;
-      font-weight: 600;
-    }
-
-    ul.commands-list li span.cmd-name {
-      color: #81e6d9;
-      font-family: monospace;
+    ul li {
+      padding: 4px 0;
+      border-bottom: 1px solid #2a2a2a;
     }
 
     footer {
+      background-color: #1a1a1a;
       text-align: center;
       padding: 1rem 0;
-      background-color: #2d3748;
-      color: #718096;
-      margin-top: 3rem;
-      user-select: none;
+      color: #666;
       font-size: 0.9rem;
+      user-select: none;
+      border-top: 2px solid #ff6700;
+      margin-top: auto;
+    }
+
+    @media (max-width: 480px) {
+      main h2 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -101,52 +128,51 @@
   </header>
 
   <main>
-    <h2>Fonctionnalités du bot</h2>
+    <h2>Fonctionnalités du Bot</h2>
 
-    <section class="category">
+    <section>
       <h3>Administration</h3>
-      <ul class="commands-list">
-        <li><span class="cmd-name">ban</span> : Bannit un membre</li>
-        <li><span class="cmd-name">clear</span> : Supprime un nombre de messages</li>
-        <li><span class="cmd-name">kick</span> : Expulse un membre</li>
-        <li><span class="cmd-name">lock</span> : Verrouille le salon actuel</li>
-        <li><span class="cmd-name">mediaonly</span> : Active ou désactive le mode media-only dans un salon</li>
-        <li><span class="cmd-name">mute</span> : Mute un membre</li>
-        <li><span class="cmd-name">nuke</span> : Supprime et recrée le salon actuel</li>
-        <li><span class="cmd-name">slowmode</span> : Active un slowmode dans le salon</li>
-        <li><span class="cmd-name">unban</span> : Débannit un membre</li>
-        <li><span class="cmd-name">unlock</span> : Déverrouille le salon actuel</li>
-        <li><span class="cmd-name">unmute</span> : Unmute un membre</li>
+      <ul>
+        <li><strong>ban</strong> : Bannit un membre</li>
+        <li><strong>clear</strong> : Supprime un nombre de messages</li>
+        <li><strong>kick</strong> : Expulse un membre</li>
+        <li><strong>lock</strong> : Verrouille le salon actuel</li>
+        <li><strong>mediaonly</strong> : Active ou désactive le mode media-only dans un salon</li>
+        <li><strong>mute</strong> : Mute un membre</li>
+        <li><strong>nuke</strong> : Supprime et recrée le salon actuel</li>
+        <li><strong>slowmode</strong> : Active un slowmode dans le salon</li>
+        <li><strong>unban</strong> : Débannit un membre</li>
+        <li><strong>unlock</strong> : Déverrouille le salon actuel</li>
+        <li><strong>unmute</strong> : Unmute un membre</li>
       </ul>
     </section>
 
-    <section class="category">
+    <section>
       <h3>Information</h3>
-      <ul class="commands-list">
-        <li><span class="cmd-name">botinfo</span> : Affiche toutes les informations du bot</li>
-        <li><span class="cmd-name">ping</span> : Affiche la latence du bot</li>
-        <li><span class="cmd-name">serverinfo</span> : Affiche les informations du serveur</li>
-        <li><span class="cmd-name">userinfo</span> : Affiche les informations d'un utilisateur</li>
+      <ul>
+        <li><strong>botinfo</strong> : Affiche toutes les informations du bot</li>
+        <li><strong>ping</strong> : Affiche la latence du bot</li>
+        <li><strong>serverinfo</strong> : Affiche les informations du serveur</li>
+        <li><strong>userinfo</strong> : Affiche les informations d'un utilisateur</li>
       </ul>
     </section>
 
-    <section class="category">
+    <section>
       <h3>Configuration</h3>
-      <ul class="commands-list">
-        <li><span class="cmd-name">config</span> : Configuration du bot (prefix, whitelist, anti-raid, PP)</li>
+      <ul>
+        <li><strong>config</strong> : Configuration du bot (prefix, whitelist, anti-raid, PP)</li>
       </ul>
     </section>
 
-    <section class="category">
+    <section>
       <h3>Général</h3>
-      <ul class="commands-list">
-        <li><span class="cmd-name">help</span> : Affiche la liste des commandes</li>
+      <ul>
+        <li><strong>help</strong> : Affiche la liste des commandes</li>
       </ul>
     </section>
-
   </main>
 
-  <footer>© 2025 - Créé par askipcestpah.uwu</footer>
+  <footer>© 2025 askipcestpah.uwu — Tous droits réservés</footer>
 </body>
 
 </html>

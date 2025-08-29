@@ -6,88 +6,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>À propos - askipcestpah.uwu</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #1a202c;
-      color: #e2e8f0;
       margin: 0;
-      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
+    }
+
+    a {
+      color: #ff6700;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffa040;
     }
 
     header {
-      background-color: #2d3748;
+      background-color: #1a1a1a;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 2px solid #ff6700;
+      user-select: none;
     }
 
     header h1 {
       margin: 0;
-      color: #4fd1c5;
       font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      color: #ff6700;
     }
 
     nav a {
-      color: #a0aec0;
-      margin-left: 1.5rem;
-      text-decoration: none;
+      margin-left: 1.8rem;
       font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #4fd1c5;
+      font-size: 1rem;
     }
 
     main {
-      padding: 3rem 2rem;
-      max-width: 700px;
-      margin: auto;
       flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
     }
 
-    img.avatar {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 15px #4fd1c5aa;
-      object-fit: cover;
-    }
-
-    h2 {
-      border-left: 4px solid #4fd1c5;
-      padding-left: 0.5rem;
+    main h2 {
+      font-weight: 700;
+      font-size: 2.4rem;
       margin-bottom: 1rem;
-      width: 100%;
-      text-align: left;
-      max-width: 700px;
+      color: #ff6700;
+      user-select: none;
     }
 
-    p.bio {
-      font-size: 1.1rem;
-      color: #cbd5e0;
-      max-width: 700px;
+    main p {
+      font-weight: 400;
+      font-size: 1.15rem;
       line-height: 1.6;
-      margin-bottom: 2rem;
+      color: #ccc;
+      user-select: none;
     }
 
     footer {
+      background-color: #1a1a1a;
       text-align: center;
       padding: 1rem 0;
-      background-color: #2d3748;
-      color: #718096;
-      user-select: none;
+      color: #666;
       font-size: 0.9rem;
+      user-select: none;
+      border-top: 2px solid #ff6700;
       margin-top: auto;
+    }
+
+    @media (max-width: 480px) {
+      main h2 {
+        font-size: 1.8rem;
+      }
+
+      main p {
+        font-size: 1rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -105,15 +116,14 @@
 
   <main>
     <h2>À propos de moi</h2>
-    <img class="avatar" src="https://i.pinimg.com/736x/99/33/05/993305a15cd9a6c82ea2db4864503034.jpg" alt="Avatar de askipcestpah.uwu" />
-    <p class="bio">
-      Salut ! Je suis <strong>askipcestpah.uwu</strong>, un jeune développeur passionné par la création de bots Discord.<br />
-      J’ai commencé récemment à coder, et j’ai pour objectif de créer un bot utile pour aider les communautés à sécuriser leurs serveurs et à faciliter leur gestion.<br />
-      J’apprends chaque jour et j’espère que ce projet pourra profiter à beaucoup de personnes !
+    <p>
+      Je suis un jeune développeur Discord passionné qui a commencé il y a peu, mais avec une grande détermination.  
+      Mon projet principal est de créer un bot Discord dédié à la sécurité des serveurs, afin d'aider les communautés à rester protégées contre les abus et attaques.  
+      Je m'efforce de développer des outils simples, efficaces, et faciles à utiliser pour tout type d'administrateur.
     </p>
   </main>
 
-  <footer>© 2025 - Créé par askipcestpah.uwu</footer>
+  <footer>© 2025 askipcestpah.uwu — Tous droits réservés</footer>
 </body>
 
 </html>
